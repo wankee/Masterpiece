@@ -1,13 +1,9 @@
-package com.lelewan.wankee.masterpiece;
+package com.lelewan.masterpiece;
 import java.io.File;
 import java.util.List;
 
 public class Test {
 
-	/*
-	 * BUG：第一章变成第第一章回
-	 * BUG：第第一回 纵横钩党清流祸回 峭茜风期月旦评 第跟回加错位置
-	 */
 	public static void main(String[] args) {
 		String address="http://www.365essay.com/jinyongquanji/02/INDEX.HTM";
 		//URL url=new URL(address);
@@ -20,11 +16,7 @@ public class Test {
 		if(!rootDir.exists()) {
 			rootDir.mkdirs();
 		}
-		
-		//String str="<TITLE>二</TITLE>";
-		//String outstr=str.replaceAll("<TITLE>(第[一二三四五六七八九十]{1,3}[回章]) (.*)</TITLE>", "第$1回 $2");
-		//String outstr=str.replaceAll("<TITLE>([一二三四五六七八九十]{1,3})(( .*)|)</TITLE>", "第$1回$2");
-		//System.out.println(outstr);
+
 		List<Book> books=htmlProcess.getBooks(address);
 		for (Book book:books){
 			book.generate(rootDir);

@@ -1,4 +1,4 @@
-package com.lelewan.wankee.masterpiece;
+package com.lelewan.masterpiece;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

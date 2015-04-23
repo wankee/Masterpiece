@@ -1,4 +1,4 @@
-package com.lelewan.wankee.masterpiece;
+package com.lelewan.masterpiece;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
